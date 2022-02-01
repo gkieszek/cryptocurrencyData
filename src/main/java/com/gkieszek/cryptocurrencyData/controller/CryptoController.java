@@ -14,10 +14,10 @@ public class CryptoController {
     @Autowired
     CryptoService cryptoService;
 
-//    @GetMapping("/cryptocurrency/{id}/{vs}")
-//    public Currency getCurrency(@PathVariable String id, @PathVariable String vs){
-//        return cryptoService.getCurrency(id, vs);
-//    }
+    @GetMapping("/cryptocurrency/{id}/{vs}")
+    public Currency getCurrency(@PathVariable String id, @PathVariable String vs){
+        return cryptoService.getCurrency(id, vs);
+    }
 
     @GetMapping("/cryptocurrency/info/{id}")
     public CryptoInfo getInfo(@PathVariable String id){
