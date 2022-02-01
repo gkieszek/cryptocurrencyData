@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.gkieszek.cryptocurrencyData.dto;
 
 import lombok.AllArgsConstructor;
@@ -10,4 +11,7 @@ import lombok.NoArgsConstructor;
 public class Ath {
     Double usd;
     Double pln;
+=======
+package com.gkieszek.cryptocurrencyData.dto;public class Ath {
+>>>>>>> origin/features
 }
