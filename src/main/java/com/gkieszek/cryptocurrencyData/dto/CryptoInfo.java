@@ -1,6 +1,8 @@
 package com.gkieszek.cryptocurrencyData.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,6 +19,7 @@ public class CryptoInfo {
     private String name;
     private String symbol;
     @JsonFormat(pattern = "yyyy-MM-dd")
+    @JsonProperty("genesis_date")
     private Date genesisDate;
     private Long marketCapRank;
     private MarketData marketData;
